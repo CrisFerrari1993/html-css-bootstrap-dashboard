@@ -51,10 +51,10 @@ MAIN SECTIONS RULE (HEADER-MAIN)
     border: 1px solid black;
 }
 img.img-fix{
-    max-width: 50%;
+    width: 41px;
+    height: 42px;
 }
 img.img_fix{
-    height: 30px;
     width: 100px;
 }
 /************************************
@@ -83,12 +83,9 @@ ul.nav-icons li{
 .bg-grey{
     background-color:#e5e5e5 ;
 }
-@media all and (min-width: 576px ){
+@media all and (min-width: 1px ){
     a.none{
         display: none;
-    }
-    .me_8 {
-        margin-left: -5rem;
     }
     .justify-content-end-custom {
         justify-content: center;
@@ -97,7 +94,7 @@ ul.nav-icons li{
         padding-right: 6rem;
     }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width:768px) {
     a.none{
         display:none;
     }
