@@ -51,7 +51,11 @@ MAIN SECTIONS RULE (HEADER-MAIN)
     border: 1px solid black;
 }
 img.img-fix{
-    width: 50px;
+    max-width: 50%;
+}
+img.img_fix{
+    height: 30px;
+    width: 100px;
 }
 /************************************
 NAVBAR RULES
@@ -83,18 +87,33 @@ ul.nav-icons li{
     a.none{
         display: none;
     }
+    .me_8 {
+        margin-left: -5rem;
+    }
     .justify-content-end-custom {
         justify-content: center;
+    }
+    .p_left {
+        padding-right: 6rem;
     }
 }
 @media all and (min-width: 768px) {
     a.none{
         display:none;
     }
+    .p_left {
+        padding-right: 1rem;
+    }
+    .me_8{
+        margin-right: 4rem;
+    }   
+    
     .justify-content-end-custom {
         justify-content: center;
     }
-    
+    .container_fix{
+        justify-content: flex-start;
+    }
 }
 @media all and (min-width: 992px){
     .justify-content-end-custom {
@@ -103,8 +122,17 @@ ul.nav-icons li{
     a.none{
         display: block;
     }
+    .me_8 {
+        margin-left: 2rem;
+    }
     a.display{
         display: none;
+    }
+}
+@media all and (min-width: 1440px){
+
+    .width_custom{
+        width: 1100px;
     }
 }
 /* dropdown menu fixed */
@@ -115,8 +143,49 @@ ul.nav-icons li{
         }
 }
 /************************************
-RULES
+SIDEBAR RULES
 *************************************/
+.sidebar-container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+}
+.sidebar-container a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+.sidebar-container .icon_container{
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+}
+.icons{
+    color: white;
+    display: block;
+    align-self: center;
+    width:30px;
+}
+@media all and (max-width: 768px){
+   .hidden {
+    display: none;
+   } 
+   #sidebar{
+    width: 65px;
+   }
+   #main-sec{
+    width: calc(100vw - 65px);
+   }
+   a.nav-link{
+    padding-right: 1rem;
+   }
+   .p_left{
+    padding-right: 3rem;
+   }
+}
 /************************************
 RULES
 *************************************/

@@ -26,17 +26,17 @@
         <!-- navbar fixed container, with big search bar and off canvas bell icon -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <!-- container-fluid -->
-            <div class="container-fluid ">
+            <div class="container-fluid container_fix bg-white p_left">
                 <!-- 1st col (contain img) -->
                 <div class="col-sm-1 col-md-1 col-xl-1">
-                    <a class="navbar-brand display " href="#"><img class="img-fix" src="img/mobile-logo.png" alt="logo smarthphone"></a>
-                    <a class="navbar-brand none" href="#"><img src="img/logo.svg" alt="logo pc"></a>
+                    <a class="navbar-brand display mx-0" href="#"><img class="img-fix" src="img/mobile-logo.png" alt="logo smarthphone"></a>
+                    <a class="navbar-brand none mx-0" href="#"><img class="img_fix" src="img/logo.svg" alt="logo pc"></a>
                 </div>
                 <!-- 2nd col (contain form search bar) -->
-                <div class="col-sm-9 col-md-8 col-xxl-9">
+                <div class="col-sm-9 col-md-8 me_8 width_custom col-xxl-9">
                     <div class="search position_relative">
                         <form class="d-flex">
-                            <input class="form-control ps-5 me-2 bg-grey " type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                            <input class="form-control ps-5 bg-grey " type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                                 aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </form>
@@ -95,7 +95,36 @@
         <div id="wrapper">
             <!-- left sidebar //width: 100% large with icons and text// width 25% small: only icons -->
             <div id="sidebar">
-            
+                <div class="sidebar-container">
+                    <div class="sidebar-top">
+                        <div class="icon_container">
+                            <div class="icons">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <a class="hidden" href="">Home</a>
+                        </div>
+                        <div class="icon_container">
+                            <div class="icons">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <a class="hidden" href="">Stats</a>
+                        </div>
+                        <div class="icon_container">
+                            <div class="icons">
+                                <i class="fa-solid fa-signal"></i>
+                            </div>
+                            <a class="hidden" href="">Signals</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-bottom">
+                        <div class="icon_container">
+                            <div class="icons">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <a class="hidden" href="">Admin</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- main-section -->
             <div id="main-sec">
