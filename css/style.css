@@ -60,85 +60,44 @@ img.img_fix{
 /************************************
 NAVBAR RULES
 *************************************/
-ul.nav-icons{
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-ul.nav-icons li{
-    margin-left: 1rem
-}
-.navbar-collapse-no-grow{
-    flex-grow: 0;
-}
 .position_relative{
     position: relative;
+}
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -7rem;
 }
 #top-nav i.fa-magnifying-glass{
     position: absolute;
     top:0.7rem;
     left: 1rem;
-
 }
 .bg-grey{
     background-color:#e5e5e5 ;
 }
+
 @media all and (min-width: 1px ){
     a.none{
         display: none;
     }
-    .justify-content-end-custom {
-        justify-content: center;
-    }
-    .p_left {
-        padding-right: 6rem;
-    }
+
 }
+
 @media all and (min-width:768px) {
     a.none{
         display:none;
-    }
-    .p_left {
-        padding-right: 1rem;
-    }
-    .me_8{
-        margin-right: 4rem;
-    }   
-    
-    .justify-content-end-custom {
-        justify-content: center;
-    }
-    .container_fix{
-        justify-content: flex-start;
-    }
+    }    
 }
+
 @media all and (min-width: 992px){
-    .justify-content-end-custom {
-        justify-content: flex-end;
-    }
     a.none{
         display: block;
-    }
-    .me_8 {
-        margin-left: 2rem;
     }
     a.display{
         display: none;
     }
 }
-@media all and (min-width: 1440px){
 
-    .width_custom{
-        width: 1100px;
-    }
-}
-/* dropdown menu fixed */
-@media (min-width: 576px) {
-    .navbar-expand-sm .navbar-nav .dropdown-menu {
-            position: absolute;
-            left: -9rem;
-        }
-}
 /************************************
 SIDEBAR RULES
 *************************************/
@@ -178,9 +137,6 @@ SIDEBAR RULES
    }
    a.nav-link{
     padding-right: 1rem;
-   }
-   .p_left{
-    padding-right: 3rem;
    }
 }
 /************************************

@@ -28,12 +28,12 @@
             <!-- container-fluid -->
             <div class="container-fluid container_fix bg-white p_left">
                 <!-- 1st col (contain img) -->
-                <div class="col-sm-1 col-md-1 col-xl-1">
+                <div class="col-sm-4 col-md-1 col-xl-1">
                     <a class="navbar-brand display mx-0" href="#"><img class="img-fix" src="img/mobile-logo.png" alt="logo smarthphone"></a>
                     <a class="navbar-brand none mx-0" href="#"><img class="img_fix" src="img/logo.svg" alt="logo pc"></a>
                 </div>
                 <!-- 2nd col (contain form search bar) -->
-                <div class="col-sm-9 col-md-8 me_8 width_custom col-xxl-9">
+                <div class="col-sm-4 col-md-9 me_8 col-xxl-10">
                     <div class="search position_relative">
                         <form class="d-flex">
                             <input class="form-control ps-5 bg-grey " type="search" placeholder="Prova a cercare: Lezioni di Laravel"
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <!-- 3rd col (contain icons link and dropdown menu) -->
-                <div class="col-sm1 d-flex justify-content-end-custom ">
+                <div class="col-sm-4 col-md-1 col-xxl-1 d-flex justify-content-end">
                     <div id="navbarSupportedContent">
                         <!-- ul icon container -->
                         <ul class="navbar-nav me-auto  mb-lg-0 d-flex align-items-center">
@@ -59,11 +59,15 @@
                                     <i class="fa-solid fa-circle-question"></i>
                                 </a>
                             </li>
-                            <!-- ellipsis icon (link dropdown nested) -->
+                            <li class="nav-item">
+                                <a class="nav-link none" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+                            <!-- ellipsis icon <!-- notifications icon (link dropdown nested) -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link none" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    
+                                    <i class="fa-solid fa-bell" style="color: #f9ec00;"></i>
                                 </a>
                                 <!-- dropdown menu -->
                                 <ul class="dropdown-menu fixed_margin" aria-labelledby="navbarDropdown">
@@ -78,11 +82,6 @@
                                     </li>
                                 </ul>
                             </li>
-                            <!-- notifications icon -->
-                            <li class="nav-item">
-                                <a class="nav-link " href="#"><i class="fa-solid fa-bell" style="color: #f9ec00;"></i></a>
-                            </li>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -95,32 +94,46 @@
         <div id="wrapper">
             <!-- left sidebar //width: 100% large with icons and text// width 25% small: only icons -->
             <div id="sidebar">
+                <!-- Sidebar container flex column space between -->
                 <div class="sidebar-container">
+                    <!-- top section of sidebar -->
                     <div class="sidebar-top">
+                        <!-- icon container (contains icon and a link) -->
                         <div class="icon_container">
+                            <!-- div contains an icon -->
                             <div class="icons">
                                 <i class="fa-solid fa-house"></i>
                             </div>
+                            <!-- link -->
                             <a class="hidden" href="">Home</a>
                         </div>
+                        <!-- icon container (contains icon and a link) -->
                         <div class="icon_container">
+                            <!-- div contains an icon -->
                             <div class="icons">
                                 <i class="fa-solid fa-chart-simple"></i>
                             </div>
+                            <!-- link -->
                             <a class="hidden" href="">Stats</a>
                         </div>
+                        <!-- icon container (contains icon and a link) -->
                         <div class="icon_container">
+                            <!-- div contains an icon -->
                             <div class="icons">
                                 <i class="fa-solid fa-signal"></i>
                             </div>
+                            <!-- link -->
                             <a class="hidden" href="">Signals</a>
                         </div>
                     </div>
                     <div class="sidebar-bottom">
+                        <!-- icon container (contains icon and a link) -->
                         <div class="icon_container">
+                            <!-- div contains an icon -->
                             <div class="icons">
                                 <i class="fa-solid fa-gear"></i>
                             </div>
+                            <!-- link -->
                             <a class="hidden" href="">Admin</a>
                         </div>
                     </div>
@@ -130,7 +143,19 @@
             <div id="main-sec">
                 <!-- stiky bread crumbs section -->
                 <div id="blue-nav">
-            
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-xxl-6">
+
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-xxl-3">
+
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-xxl-3">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- main content section: 2 columns with nested rows -->
                 <div id="main-content">
