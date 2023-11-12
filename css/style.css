@@ -140,8 +140,22 @@ SIDEBAR RULES
    }
 }
 /************************************
-RULES
+BLUE NAV RULES
 *************************************/
+.bg_color{
+    background-color:#165bba;
+}
+.height{
+    height: 20px;
+    font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
+}
+.white{
+    color: white;
+}
+
+
 /************************************
 RULES
 *************************************/
