@@ -139,61 +139,400 @@
                     </div>
                 </div>
             </div>
-            <!-- main-section -->
-            <div id="main-sec">
-                <!-- stiky bread crumbs section -->
-                <div id="blue-nav">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <!-- left/bottom blue nav section breadcrumbs -->
-                            <div class="col-sm-12 col-md-4 col-xxl-6">
-                                <div class="container-fluid">
-                                    <nav aria-label="breadcrumb">
-                                        <ol class="breadcrumb my-0 py-1">
-                                            <li class="breadcrumb-item active d-flex" aria-current="page">
-                                                <!-- title -->
-                                                <h2 class=" py-1 my-0 white">
-                                                    Boolean 
-                                                </h3>
-                                            </li>
-                                            <!-- pills -->
-                                            <li class="breadcrumb my-0 d-flex align-self-end py-3">
-                                                <a class=" ms-2 px-1 d-flex bg_color rounded-pill height">
-                                                    Piano blaze
-                                                </a>
-                                            </li>
-                                        </ol>
-                                    </nav>
-                                    <nav aria-label="breadcrumb">
-                                        <ol class="breadcrumb height mx-0">
-                                            <!-- pills -->
-                                            <li class="breadcrumb"><a href="#" class=" ms-1 px-1 d-flex bg_color rounded-pill height">3 app</a></li>
-                                                <!-- font awesome icon divider -->
-                                            <li class="breadcrumb"><a href="#" class=" ms-1 d-flex height"><i class="align-self-center fa-solid fa-angles-right"></i></a></li>
-                                            <!-- pills -->
-                                            <li class="breadcrumb" aria-current="page"> <a href="#" class=" ms-1 px-1 d-flex bg_color rounded-pill height">Boolean mobile app</a></li>
-                                            <!-- pills -->
-                                            <li class="breadcrumb" aria-current="page"> <a href="#" class=" ms-1 px-1 d-flex bg_color rounded-pill height">Boolean web app</a></li>
-                                            <!-- pills -->
-                                            <li class="breadcrumb" aria-current="page"> <a href="#" class=" ms-1 px-1 d-flex bg_color rounded-pill height">Boolean blog app</a></li>
-                                        </ol>
-                                    </nav>
+            <!-- stiky bread crumbs section -->
+            <div id="blue-nav">
+                <div class="container">
+                    <div class="row">
+                        <!-- left/bottom blue nav section breadcrumbs -->
+                        <div class="col-sm-12 col-md-7 col-xxl-5 my-3 px-0 order-sm-2_custom">
+                            <div class="container-fluid px-3">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb my-0 py-1">
+                                        <li class="breadcrumb-item active d-flex flex-nowrap" aria-current="page">
+                                            <!-- title -->
+                                            <h3 class=" py-1 my-0 white d-flex align-items-center mb-2">
+                                                Boolean
+                                            </h3>
+                                        </li>
+                                        <!-- pills -->
+                                        <li class="breadcrumb my-0 d-flex align-self-end py-3">
+                                            <a class=" ms-2 px-1 d-flex bg_color rounded-pill height">
+                                                Piano blaze
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <nav aria-label="breadcrumb d-flex flex-nowrap order-sm-2_custom">
+                                    <ol class="breadcrumb height mx-0 d-flex flex-nowrap">
+                                        <!-- pills -->
+                                        <li class="breadcrumb"><a href="#" class=" ms-1 px-1 d-flex bg_color rounded-pill height">3
+                                                app</a></li>
+                                        <!-- font awesome icon divider -->
+                                        <li class="breadcrumb"><a href="#" class=" ms-1 d-flex height"><i
+                                                    class="align-self-center fa-solid fa-angles-right"></i></a></li>
+                                        <!-- pills -->
+                                        <li class="breadcrumb pills_none" aria-current="page"> <a href="#"
+                                                class=" ms-1 px-1 d-flex bg_color rounded-pill height">Boolean mobile app</a></li>
+                                        <!-- pills -->
+                                        <li class="breadcrumb pills_none" aria-current="page"> <a href="#"
+                                                class=" ms-1 px-1 d-flex bg_color rounded-pill height">Boolean web app</a></li>
+                                        <!-- pills -->
+                                        <li class="breadcrumb pills_none" aria-current="page"> <a href="#"
+                                                class=" ms-1 px-1 d-flex bg_color rounded-pill height">Boolean blog app</a></li>
+                                        <!-- pills -->
+                                        <li class="breadcrumb" aria-current="page"> <a href="#"
+                                                class=" ms-1 px-1 d-flex bg_color height rounded-circle"> + </a></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- left blue middle section breadcrumbs -->
+                        <div class="col-sm-12 col-md-3 col-xxl-4 my-3 order-sm-1_custom px-0">
+                            <div class="container-fluid px-3">
+                                <p class="white">
+                                    Studenti online negli ultimi 30 minuti
+                                </p>
+                                <h2 class="white">
+                                    125
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-xxl-3 d-flex my-3 order-sm-3_custom px-0">
+                            <div class="container-fluid px-3">
+                                <span class="white">
+                                    Nuovo Studente
+                                </span>
+                                <button class="btn rounded border border-2 white align-items-center ms-1" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                        class="fa-solid fa-plus"></i></button>
+            
+                                <div class="offcanvas offcanvas-end_custom" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body custom">
+                                        <div class="container">
+                                            <form action="">
+                                                <div class="row">
+                                                    <!-- Name and surname form -->
+                                                    <div class="col-sm-12 col-md-12 col-xl-6">
+                                                        <label for="name" class="form-label">Nome</label>
+                                                        <input type="name" required class="form-control" placeholder=""
+                                                            aria-label="First name">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-xl-6">
+                                                        <label for="surname" class="form-label">Cognome</label>
+                                                        <input required class="form-control" type="surname" class="form-control"
+                                                            placeholder="" aria-label="Last name">
+                                                    </div>
+                                                    <!-- email, and password form -->
+                                                    <div class="col-sm-12 col-md-12 col-xl-6 mt-1">
+                                                        <label for="surname" class="form-label">Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input required class="form-control" type="email" class="form-control"
+                                                                placeholder="" aria-label="Username"
+                                                                aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-xl-6 mt-1">
+                                                        <label for="inputPassword5" class="form-label">Password</label>
+                                                        <input required class="form-control" type="password" id="inputPassword5"
+                                                            class="form-control" aria-describedby="passwordHelpBlock">
+                                                    </div>
+                                                    <!-- email, and password form confirm -->
+                                                    <div class="col-sm-12 col-md-12 col-xl-6 mt-1">
+                                                        <label for="surname" class="form-label">Indirizzo Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input required class="form-control" type="email" class="form-control"
+                                                                placeholder="" aria-label="Username"
+                                                                aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-xl-6 mt-1">
+                                                        <label for="inputPassword5" class="form-label">Password</label>
+                                                        <input required class="form-control" type="password" id="inputPassword5"
+                                                            class="form-control" aria-describedby="passwordHelpBlock">
+                                                    </div>
+                                                    <!-- adress form 100% width of container -->
+                                                    <div class="col-12 mt-1">
+                                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                        <input required class="form-control" type="text" class="form-control"
+                                                            id="inputAddress" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-xl-6 mt-1">
+                                                        <label for="inputAddress" class="form-label">Citt&aacute;</label>
+                                                        <input required class="form-control" type="text" class="form-control"
+                                                            id="inputAddress" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-xl-4 mt-1">
+                                                        <label class="form-label">Stato</label>
+                                                        <select required class="form-control" class="form-select"
+                                                            id="inputGroupSelect01">
+                                                            <option selected>Scegli...</option>
+                                                            <option value="1">Italia</option>
+                                                            <option value="2">Germania</option>
+                                                            <option value="3">Francia</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-xl-2 mt-1">
+                                                        <label for="inputAddress" class="form-label">CAP</label>
+                                                        <input required class="form-control" type="number-text" class="form-control"
+                                                            id="inputAddress" placeholder="">
+                                                    </div>
+                                                    <div class="col-12 mt-1">
+                                                        <label class="form-label" for="inputGroupFile02">Foto</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-1">
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label aria-required="true" class="form-check-label"
+                                                                for="exampleCheck1">Seleziona per proseguire</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 mt-1 d-flex">
+                                                        <button type="submit" class="btn btn-primary me-1">Salva</button>
+                                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- left blue middle section breadcrumbs -->
-                            <div class="col-sm-12 col-md-4 col-xxl-3">
-                                
-                            </div>
-                            <div class="col-sm-12 col-md-4 col-xxl-3">
-
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- main-section -->
+            <div id="main-sec">
                 <!-- main content section: 2 columns with nested rows -->
-                <div id="main-content">
-            
+                    <div id="main-content">
+                        <div class="container">
+                            <div class="row px-2">
+                                <div class="col-sm-12 col-md-12 col-xl-8 mt-4 border border-1 p-0 d-flex flex-column">
+                                    <div class="container mb-2">
+                                        <div class="card-header">
+                                            <h4 class="my-0">
+                                                Prossime classi
+                                            </h4>
+                                        </div>
+                                        <div class="table-container">
+                                            <table class="table mb-4">
+                                                <thead class="border_fix">
+                                                    <div class="t-color">
+                                                        <tr class="grey">
+                                                            <div class="container">
+                                                                <th class="col-7">Nome</th>
+                                                                <th class="col-2 text-center">Data inizio</th>
+                                                                <th class="col-1 text-center">ROI</th>
+                                                                <th class="col-1 text-center">Stato</th>
+                                                                <th class="col-1 text-center">Azioni</th>
+                                                            </div>
+                                                        </tr>
+                                                    </div>
+                                                </thead>
+                                                <tbody class="border_fix">
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 75
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">15 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-success">Done</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 76
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">16 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-success">Done</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 77
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">17 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-warning">Process</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 78
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">18 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-success">Done</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 79
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">19 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-danger">Failed</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 80
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">20 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-success">Done</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 81
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">21 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-danger">Failed</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border_fix">
+                                                        <th scope="row">
+                                                            <div class="icon_container d-flex">
+                                                                <!-- div contains an icon -->
+                                                                <div class="icons red d-flex align-items-center justify-content-center">
+                                                                    <i class="fa-solid fa-code"></i>
+                                                                </div>
+                                                                <!-- link -->
+                                                                <span class="ms-3">
+                                                                    Classe 82
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <td class="text-center">22 Feb 2021</td>
+                                                        <td class="text-center">20&percnt;</td>
+                                                        <td class="text-center"><span class="badge rounded-pill bg-success">Done</span></td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                                    class="fa-solid fa-trash-can"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-xl-4">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                
             </div>
         </div>
     </main>
