@@ -26,33 +26,36 @@ MAIN SECTIONS RULE (HEADER-MAIN)
     display: flex;
     height: calc(100vh - 60px);
     margin-top: 60px;
+    overflow-y: auto;
+
+}
+#wrapper-left{
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 #sidebar{
     width: 150px;
     height: calc(100vh - 60px);
-    position: fixed;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
     /* debug */
 }
 #main-sec{
-    height: 100%;
-    width: calc(100vw - 150px);
-    margin-left: 150px;
+    height: calc( 100vh - 60px );
     /* debug */
 }
 #main-content{
     display: block;
-    margin-top: 150px;
     overflow-y: auto;
 }
 #blue-nav{
-    position: fixed;
-    margin-left: 150px;
-    width: calc(100vw - 150px);
     background-color:#1b72e8;
-    /* debug */
+
 }
 img.img-fix{
     width: 41px;
@@ -79,7 +82,7 @@ NAVBAR RULES
 .bg-grey{
     background-color:#e5e5e5 ;
 }
-
+/* navbar media queries */
 @media all and (min-width: 1px ){
     a.none{
         display: none;
@@ -133,6 +136,7 @@ SIDEBAR RULES
     align-self: center;
     width:30px;
 }
+/* sidebar media queries */
 @media all and (max-width: 768px){
    .hidden {
     display: none;
@@ -140,18 +144,10 @@ SIDEBAR RULES
    #sidebar{
     width: 65px;
    }
-    #blue-nav {
-        width: calc(100vw - 65px);
-        margin-left: 65px;
-    }
-   #main-sec{
-    width: calc(100vw - 65px);
-    margin-left: 65px;
-    margin-top: 180px;
-   }
    a.nav-link{
     padding-right: 1rem;
    }
+   
 }
 /************************************
 BLUE NAV RULES BREADCRUMBS
@@ -167,6 +163,7 @@ BLUE NAV RULES BREADCRUMBS
     text-decoration: none;
     text-align: center;
     text-wrap: nowrap;
+
 }
 .height:hover {
     color: white;
@@ -174,6 +171,9 @@ BLUE NAV RULES BREADCRUMBS
 }
 .white{
     color: white;
+}
+.pills_add{
+    display: none;
 }
 /* off canvas rules */
 .offcanvas-end_custom{
@@ -188,9 +188,7 @@ BLUE NAV RULES BREADCRUMBS
     text-align: left;
     font-weight: 500;
 }
-
-
-
+/* blue-nav media queries */
 @media all and (max-width: 768px){
     .flex-sm-wrap-reverse_max{
         flex-wrap: wrap-reverse;
@@ -211,6 +209,9 @@ BLUE NAV RULES BREADCRUMBS
 @media all and ( max-width: 992px){
     .pills_none{
         display: none;
+    }
+    .pills_add{
+        display: block;
     }
 }
 
@@ -241,12 +242,3 @@ th{
 .block{
     display: block;
 }
-/************************************
- RULES
-*************************************/
-/************************************
-RULES
-*************************************/
-/************************************
-RULES
-*************************************/
